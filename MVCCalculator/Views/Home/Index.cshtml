@@ -1,0 +1,75 @@
+﻿@*@model MVCCalculator.Models.Input*@
+@{
+
+    ViewData["Title"] = "Home Page";
+
+
+}
+
+<html>
+<head>
+
+    <!-- for styling -->
+    <style>
+        .title {
+            margin-bottom: 10px;
+            text-align: center;
+            width: 210px;
+            color: green;
+            border: solid black 2px;
+        }
+
+        input[type="button"] {
+            background-color: green;
+            color: black;
+            border: solid black 2px;
+            width: 100%
+        }
+
+        input[type="text"] {
+            background-color: white;
+            border: solid black 2px;
+            width: 100%
+        }
+    </style>
+</head>
+<body>
+
+</body>
+</html>
+<!-- create table --> 
+<form asp-action="Index" method="post">
+    <div> class=title>GeeksforGeeks Calculator</div>
+    <table border="1">
+        <tr>
+
+            <td colspan="3"><input type="text" id="result" name="result" value=@TempData.Peek("result")></td>
+
+            <td><input id="C" name="click" type="submit" value="C" /> </td>
+        </tr>
+        <tr>
+            <td><input id="one" name="click" type="submit" value="1" /> </td>
+            <td><input id="two" name="click" type="submit" value="2" /> </td>
+            <td><input id="three" name="click" type="submit" value="3" /> </td>
+            <td><input id="div" name="click" type="submit" value="/" /> </td>
+        </tr>
+        <tr>
+            <td><input id="four" name="click" type="submit" value="4" /> </td>
+            <td><input id="five" name="click" type="submit" value="5" /> </td>
+            <td><input id="six" name="click" type="submit" value="6" /> </td>
+            <td><input id="min" name="click" type="submit" value="-" /> </td>
+        </tr>
+        <tr>
+            <td><input id="seven" name="click" type="submit" value="7" /> </td>
+            <td><input id="eight" name="click" type="submit" value="8" /> </td>
+            <td><input id="nine" name="click" type="submit" value="9" /> </td>
+            <td><input id="plus" name="click" type="submit" value="+" /> </td>
+        </tr>
+        <tr>
+            <td><input id="dot" name="click" type="submit" value="." /> </td>
+            <td><input id="zero" name="click" type="submit" value="0" /> </td>
+            <td><input id="equal" name="click" type="submit" value="=" /> </td>
+            <td><input id="mult" name="click" type="submit" value="*" /> </td>
+        </tr>
+    </table>
+</form>
