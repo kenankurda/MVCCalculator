@@ -35,9 +35,9 @@ namespace MVCCalculator.Controllers
 
         private string SelectClick(string click)
         {
-            int? total = 0;
-            int? firstNumber = 0;
-            int? secondNumber = 0;
+            int total = 0;
+            int firstNumber = 0;
+            int secondNumber = 0;
 
             string result = Input;
 
